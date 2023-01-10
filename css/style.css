@@ -1,0 +1,420 @@
+:root {
+    --accent: #EC5F55;
+    --bg-about: #E5EFFF;
+    --bg-main: #FFF4E2;
+    --text-dark: #021E53;
+    --text-light: #ffffff;
+    --index: calc(1vw + 1vh);
+}
+
+@font-face {
+    font-family: unbounded_r;
+    src: url(/fonts/Unbounded-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: unbounded_l;
+    src: url(/fonts/Unbounded-Light.ttf);
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    color: #F5F5F5;
+}
+
+h1,h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1470px;
+    padding: 0 15px;
+    margin: 0px auto;
+}
+
+
+.header__background {
+    background-image: url(/assets/background.jpg);
+    height: 100%;
+    width: 100%;
+    
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+
+    will-change: transform;
+    z-index: 2;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__tittle {
+    padding-top: 400px;
+    padding-bottom: 430px;
+}
+
+h1 {
+    font-family: unbounded_r;
+    font-size: 80px;
+    color: var(--text-light);
+}
+
+img {
+    width: 83px;
+}
+
+@media (max-width: 680px) {
+    h1 {
+        font-size: 38px;
+    }
+
+    img {
+        width: 60px;
+    }
+}
+
+/* Блок с ценлями */
+.main {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+
+    padding-bottom: 250px;
+}
+
+.tittle {
+    padding-top: 80px;
+    padding-bottom: 54px;
+
+    font-family: unbounded_l;
+    font-size: 40px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card {
+    text-align: center;
+
+    font-family: unbounded_l;
+    font-size: 25px;
+}
+
+.card img {
+    width: 75%;
+}
+
+@media (max-width: 840px) {
+    .cards {
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        margin-bottom: 35px;
+    }
+}
+
+/* Блок с призывом к действию */
+
+.call {
+    background-color: var(--accent);
+    color: var(--text-light);
+    
+    padding-top: 129px;
+    padding-bottom: 120px;
+}
+
+.call__inner {
+    display: flex;
+    justify-content: space-around;
+}
+
+._column {
+    flex-direction: column;
+}
+
+.call__tittle {
+    font-family: unbounded_r;
+    font-size: 65px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.call__discription {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.call__buttons {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.call__buttons img {
+    width: 114px;
+    margin-right: 114px;
+}
+.last {
+    margin: none;
+}
+
+@media (max-width: 1320px) {
+    .call__buttons img {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .call__tittle {
+        font-size: 50px;
+    }
+
+    .call__buttons img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 840px) {
+    .call__inner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .call__tittle {
+        font-size: 40px;
+    }
+    
+    .call__buttons img {
+        width: 70px;
+        margin-right: 35px;
+    }
+
+    .call__discription {
+        font-size: 10px;
+    }
+}
+
+/* Блок с описанием продукта */
+
+.discription {
+    background-color: var(--bg-about);
+    padding-top: 152px;
+    padding-bottom: 100px;
+}
+
+.discription__inner {
+    display: flex;
+}
+
+.discription__photo {
+    width: 200%;
+    margin-right: 20px;
+}
+
+.discription__photo img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.discription__list {
+    padding-left: 110px;
+}
+
+h2 {
+    color: var(--accent);
+    width: 75%;
+    padding-left: 40px;
+    padding-bottom: 77px;
+    font-family: unbounded_l;
+    font-size: 65px;
+}
+
+span {
+    color: var(--text-dark);
+}
+
+ul {
+    color: var(--accent);
+    font-family: unbounded_l;
+    font-size: 30px;
+}
+
+li {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1335px) {
+    ul {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1195px) {
+    h2 {
+        font-size: 50px;
+    }
+    ul {
+        font-size: 20px;
+    }
+
+    li {
+        margin-bottom: 40px;
+    }
+
+    .discription__list {
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .discription {
+        padding-bottom: 50px;
+    }
+    .discription__inner {
+        flex-wrap: wrap;
+    }
+
+    .discription__list {
+        padding-left: 30px;
+    }
+
+    .discription__photo img {
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        padding-bottom: 30px;
+    }
+
+    ul {
+        font-size: calc(var(--index) * 1.5);
+    }
+}
+
+@media (max-width: 560px) {
+    .discription {
+        padding-top: 50px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    .discription__list {
+        padding-left: 0px;
+    }
+}
+
+/* Блок с достижениями */
+
+.progress {
+    background-color: var(--bg-about);
+}
+
+.progress__cards {
+    display: flex;
+    color:  var(--accent);
+    font-family: unbounded_r;
+
+    justify-content: space-between;
+    text-align: center;
+
+    padding-bottom: 100px;
+
+}
+
+.card__tittle {
+    font-size: 130px;
+}
+
+.card__discription {
+    font-size: 30px;
+}
+
+@media (max-width: 1080px) {
+    .card__tittle {
+        font-size: 100px;
+    }
+    
+    .card__discription {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 840px) {
+    .card__tittle {
+        font-size: 80px;
+    }
+    
+    .card__discription {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .progress__cards {
+        flex-direction: column;
+    }
+
+    .progress__card {
+        margin-bottom: 60px;
+    }
+    .card__tittle {
+        font-size: 100px;
+    }
+    
+    .card__discription {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 440px) {
+    .card__tittle {
+        font-size: 80px;
+    }
+    
+    .card__discription {
+        font-size: 25px;
+    }
+}
+
+/* Блок с цитатой */
+
+.quote {
+    background-color: var(--bg-main);
+    color: var(--accent);
+    font-family: unbounded_r;
+    padding-bottom: 93px;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quote__tittle {
+    padding-top: 93px;
+    padding-bottom: 40px;
+    font-size: calc(var(--index) * 2);
+}
+
+.quote__author {
+    font-size: calc(var(--index) * 0.8);
+}
