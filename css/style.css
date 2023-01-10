@@ -9,13 +9,13 @@
 
 @font-face {
     font-family: unbounded_r;
-    src: url(/fonts/Unbounded-Regular.ttf);
+    src: url(./fonts/Unbounded-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: unbounded_l;
-    src: url(/fonts/Unbounded-Light.ttf);
+    src: url(./fonts/Unbounded-Light.ttf);
     font-weight: 300;
 }
 
@@ -44,7 +44,7 @@ h1,h2 {
 
 
 .header__background {
-    background-image: url(/assets/background.jpg);
+    background-image: url(./assets/background.jpg);
     height: 100%;
     width: 100%;
     
